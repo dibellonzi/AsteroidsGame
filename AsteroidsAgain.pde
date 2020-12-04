@@ -10,13 +10,13 @@ class AsteroidsAgain extends Floater {
       xCorners[2] = 13;
       xCorners[3] = 6;
       xCorners[4] = -11;
-      xCorners[5] = -13;
+      xCorners[5] = -5;
       yCorners[0] = -8;
       yCorners[1] = -8;
       yCorners[2] = 0;
       yCorners[3] = 10;
       yCorners[4] = 8;
-      yCorners[5] = 10;
+      yCorners[5] = 0;
       myCenterX = 350;
       myCenterY = 350;
       while(myCenterX > 320 && myCenterX < 380 && myCenterY > 320 && myCenterY < 380){
