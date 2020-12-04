@@ -27,7 +27,7 @@ class AsteroidsAgain extends Floater {
 void move(){
     myCenterX += myXspeed;
     myCenterY += myYspeed;
-    if(myCenterX >width)
+    if(myCenterX > width)
     {
       myCenterX = 0;
     }
