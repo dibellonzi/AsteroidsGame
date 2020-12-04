@@ -1,3 +1,4 @@
+//your variable declarations here
 float myXspeed, myYspeed;
 Spaceship tony = new Spaceship();
 Star[] sky = new Star[800];
