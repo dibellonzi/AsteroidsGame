@@ -17,11 +17,15 @@ class AsteroidsAgain extends Floater {
       yCorners[3] = 10;
       yCorners[4] = 8;
       yCorners[5] = 10;
+      myCenterX = 350;
+      myCenterY = 350;
+      while(myCenterX > 320 && myCenterX < 380 && myCenterY > 320 && myCenterY < 380){
       myCenterX = (int)(Math.random()*801);
       myCenterY = (int)(Math.random()*801);
+      }
       myColor = (100);
-      myXspeed=(Math.random()*3)-1; 
-      myYspeed=(Math.random()*3)-1;
+      myXspeed=(Math.random()*2)-1; 
+      myYspeed=(Math.random()*2)-1;
       myPointDirection=(Math.random()*361);
   }
 void move(){
@@ -44,5 +48,6 @@ void move(){
     {
       myCenterY = height;
     }
+
   }
 }
