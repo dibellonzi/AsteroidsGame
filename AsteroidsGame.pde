@@ -1,9 +1,8 @@
-//your variable declarations here
 float myXspeed, myYspeed;
 Spaceship tony = new Spaceship();
 Star[] sky = new Star[800];
 int numAsteroids = 15;
-ArrayList <AsteroidsAgain> AsteroidsAgain = new ArrayList <AsteroidsAgain>();
+ArrayList <AsteroidsAgain> Asteroid = new ArrayList <AsteroidsAgain>();
   public void setup()
   {
     size(800,800);
@@ -11,7 +10,7 @@ ArrayList <AsteroidsAgain> AsteroidsAgain = new ArrayList <AsteroidsAgain>();
       sky[i]= new Star();
     }
     for(int i = 0; i<numAsteroids; i++){
- AsteroidsAgain.add(new AsteroidsAgain()); 
+Asteroid.add(new AsteroidsAgain()); 
 }
   }
   public void draw() {
@@ -23,11 +22,11 @@ ArrayList <AsteroidsAgain> AsteroidsAgain = new ArrayList <AsteroidsAgain>();
   tony.move();
   tony.show();
   for(int i=0; i<numAsteroids; i++){
-    AsteroidsAgain.get(i).show();
-    AsteroidsAgain.get(i).move();
-    AsteroidsAgain.get(i).turn(AsteroidsAgain.get(i).myRotateSpeed);
-  if(dist((float)tony.myCenterX, (float)tony.myCenterY, (float)AsteroidsAgain.get(i).myCenterX, (float)AsteroidsAgain.get(i).myCenterY) < 20){
-    AsteroidsAgain.remove(i);
+    Asteroid.get(i).show();
+    Asteroid.get(i).move();
+    Asteroid.get(i).turn(Asteroid.get(i).myRotateSpeed);
+  if(dist((float)tony.myCenterX, (float)tony.myCenterY, (float)Asteroid.get(i).myCenterX, (float)Asteroid.get(i).myCenterY) < 20){
+    Asteroid.remove(i);
     numAsteroids--;
     i--;
    }
