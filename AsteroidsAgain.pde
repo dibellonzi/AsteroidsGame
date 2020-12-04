@@ -29,25 +29,7 @@ class AsteroidsAgain extends Floater {
       myPointDirection=(Math.random()*361);
   }
 void move(){
-    myCenterX += myXspeed;
-    myCenterY += myYspeed;
-    if(myCenterX >width)
-    {
-      myCenterX = 0;
-    }
-    else if (myCenterX<0)
-    {
-      myCenterX = width;
-    }
-    if(myCenterY >height)
-    {
-      myCenterY = 0;
-    } 
-
-    else if (myCenterY < 0)
-    {
-      myCenterY = height;
-    }
-
-  }
+   turn(myRotateSpeed);
+   super.move();
+}
 }
